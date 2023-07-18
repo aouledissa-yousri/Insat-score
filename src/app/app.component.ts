@@ -91,6 +91,10 @@ export class AppComponent implements OnInit{
     this.matSnackBar.open(`Score: ${(Math.round(score * 100)/100).toFixed(2)}/115`, "Close")
   }
 
+  reset(){
+    this.form.reset()
+  }
+
 
 
 
