@@ -76,11 +76,6 @@ export class AppComponent implements OnInit{
 
 
   submit(){
-    console.log(`B1: ${this.calculateB1(this.form.value.birthYear)}`)
-    console.log(`B2: ${this.calculateB2(this.form.value.bac)}`)
-    console.log(`M: ${this.calculateM(this.form.value.grade1, this.form.value.grade2, this.form.value.grade3)}`)
-    console.log(`R: ${this.calculateR()}`)
-
 
     const B1 = this.calculateB1(this.form.value.birthYear)
     const B2 = this.calculateB2(this.form.value.bac)
@@ -89,7 +84,6 @@ export class AppComponent implements OnInit{
 
 
     const total = 0.5*M + 0.5*R + B1 + B2
-    console.log(`score totale: ${total}`)
     this.displayResult(total)
   }
 
